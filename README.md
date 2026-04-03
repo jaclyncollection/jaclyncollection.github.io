@@ -1,4 +1,3 @@
-# jaclyncollection.github.io
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,16 +11,15 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #f6f3ef;
+  background: #f7f5f2;
   color: #2b2b2b;
 }
 
 /* Header */
 header {
-  background: #f6f3ef;
-  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
+  padding: 20px 40px;
   font-weight: 500;
   font-size: 18px;
 }
@@ -29,29 +27,35 @@ header {
 /* Hero */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px 80px;
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .hero p {
   color: #777;
-  margin-top: 10px;
+  font-size: 16px;
 }
 
 /* Button */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 22px;
-  background: #2b2b2b;
-  color: white;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: #1f1f1f;
+  color: #fff;
   text-decoration: none;
   border-radius: 30px;
   font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 /* Section */
@@ -64,10 +68,10 @@ header {
   margin-bottom: 30px;
 }
 
-/* Products */
-.products {
+/* Product Grid */
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
   gap: 25px;
 }
 
@@ -79,7 +83,7 @@ header {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .card img {
@@ -93,13 +97,13 @@ header {
 }
 
 .card h3 {
-  margin: 5px 0;
   font-weight: 500;
+  margin: 5px 0;
 }
 
 .card p {
-  color: #777;
   font-size: 14px;
+  color: #777;
 }
 
 /* Portfolio */
@@ -112,27 +116,39 @@ header {
 .gallery img {
   width: 100%;
   border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* About */
+.about {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  line-height: 1.6;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 30px;
-  color: #888;
+  padding: 40px;
   font-size: 13px;
+  color: #999;
 }
 
-/* Floating WhatsApp */
+/* WhatsApp Floating */
 .whatsapp {
   position: fixed;
-  bottom: 20px;
   right: 20px;
+  bottom: 20px;
   background: #25D366;
-  color: white;
-  padding: 14px 16px;
+  color: #fff;
+  padding: 14px 18px;
   border-radius: 50px;
   text-decoration: none;
   font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 </style>
 </head>
@@ -145,38 +161,38 @@ footer {
 </header>
 
 <section class="hero">
-  <h1>Personalised Gifts, Made Simple</h1>
-  <p>Tote Bags • Pencil Cases • Custom Printing</p>
-  <a class="btn" href="https://wa.me/60123456789?text=Hi%20Jaclyn%2C%20I%27m%20interested%20in%20your%20products">Order via WhatsApp</a>
+  <h1>Simple. Personal. Meaningful.</h1>
+  <p>Custom Tote Bags • Pencil Cases • Personalized Printing</p>
+  <a class="btn" href="https://wa.me/60123456789?text=Hi%20Jaclyn%2C%20I%20want%20to%20order">Order via WhatsApp</a>
 </section>
 
 <section class="section">
-  <h2>Products</h2>
-  <div class="products">
+  <h2>Our Products</h2>
+  <div class="grid">
 
     <div class="card">
-      <img src="https://via.placeholder.com/400">
+      <img src="https://via.placeholder.com/400x300">
       <div class="card-content">
         <h3>Tote Bags</h3>
-        <p>Minimal, everyday custom totes</p>
+        <p>Minimal design, fully customizable.</p>
         <a class="btn" href="https://wa.me/60123456789?text=Hi%20I%20want%20tote%20bag">Order</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/400">
+      <img src="https://via.placeholder.com/400x300">
       <div class="card-content">
         <h3>Pencil Cases</h3>
-        <p>Perfect for gifts & daily use</p>
+        <p>Perfect for gifts & daily use.</p>
         <a class="btn" href="https://wa.me/60123456789?text=Hi%20I%20want%20pencil%20case">Order</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/400">
+      <img src="https://via.placeholder.com/400x300">
       <div class="card-content">
         <h3>Custom Printing</h3>
-        <p>Print your own design or logo</p>
+        <p>Bring your ideas to life.</p>
         <a class="btn" href="https://wa.me/60123456789?text=Hi%20I%20want%20custom%20printing">Customize</a>
       </div>
     </div>
@@ -185,7 +201,7 @@ footer {
 </section>
 
 <section class="section">
-  <h2>Our Work</h2>
+  <h2>Portfolio</h2>
   <div class="gallery">
     <img src="https://via.placeholder.com/400">
     <img src="https://via.placeholder.com/400">
@@ -194,11 +210,21 @@ footer {
   </div>
 </section>
 
+<section class="section">
+  <div class="about">
+    <h2>About Jaclyn Collection</h2>
+    <p>
+      We specialise in custom-made gifts with a focus on quality, simplicity, and personal touch. 
+      Every piece is made with care to bring your ideas into something meaningful and unique.
+    </p>
+  </div>
+</section>
+
 <footer>
   © 2026 Jaclyn Collection
 </footer>
 
-<a class="whatsapp" href="https://wa.me/60123456789?text=Hi%20Jaclyn%2C%20I%27m%20interested%20in%20your%20products">
+<a class="whatsapp" href="https://wa.me/60123456789?text=Hi%20Jaclyn%2C%20I%20want%20to%20order">
   Chat on WhatsApp
 </a>
 
